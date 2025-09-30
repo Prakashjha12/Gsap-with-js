@@ -53,34 +53,28 @@ tl.from(".main-video", {
   ease: "power2.in",
 });
 tl.to(".main-video", {
-  scale: 1.6,
+  scale: 1.4,
   ease: "power1.in",
   scrollTrigger: {
-    scrub: 2,
+    scrub: 0.3,
     duration: 0.6,
     trigger: ".main-video",
     scroller: "body",
-    markers: true,
+    // markers: true,
     start: "top 50%",
     end: "bottom 50%",
   },
 }),
   tl.to(".page-2-text h2", {
-    transform: "translateX(-150%)",
+    transform: "translateX(-180%)",
     scrollTrigger: {
       trigger: ".page-2-text ",
       scroller: "body",
       // markers: true,
-      start: "top 40%",
-      end: "top -100%",
-      ease: "power1.out",
+      start: "top 60%",
+      end: "top -50%",
+      ease: "power3.out",
       pin: true,
-      scrub: 2,
+      scrub: 0.3,
     },
   });
-tl.to(".cards div img", {});
-if (!localStorage.getItem("heroPlayed")) {
-  localStorage.setItem("heroPlayed", "true");
-} else {
-  document.querySelector(".hero").style.display = "none";
-}

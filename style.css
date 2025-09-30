@@ -70,6 +70,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  perspective: 1000px;
 }
 .bg-video video {
   width: 100%;
@@ -88,29 +89,4 @@ body {
   padding: 20px;
   text-transform: capitalize;
   overflow-x: hidden;
-}
-.cards {
-  height: 40vh;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 0px 50px;
-}
-.cards div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.cards div img {
-  height: 300px;
-  width: 400px;
-  object-fit: cover;
-  border-radius: 20px;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-}
-
-.page-3 {
-  height: 100%;
-  width: 100vh;
 }
